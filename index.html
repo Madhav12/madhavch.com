@@ -3,6 +3,7 @@
 
 <head>
     <title>NEW PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <style>
         .button-container {
             text-align: center;
@@ -23,11 +24,25 @@
             border: none;
             outline: none;
             transition: background-image 0.3s, box-shadow 0.3s;
+            margin: 5px;
         }
 
         .curved-button:hover {
             background-image: linear-gradient(to bottom, #3498db, #52b3d9);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .youtube-button {
+            background-image: linear-gradient(to bottom, #ff0000, #cc0000);
+            border: 1px solid #990000;
+        }
+
+        .youtube-button:hover {
+            background-image: linear-gradient(to bottom, #cc0000, #ff0000);
+        }
+
+        .social-icon {
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -36,12 +51,23 @@
     <h1 style="color: deepskyblue; text-align: center;">&#128151; Welcome to Madhav's Portal &#128151;</h1>
 
     <div class="button-container">
-        <button class="curved-button" onclick="openTwitter()">Go to Twitter</button>
+        <button class="curved-button" onclick="openTwitter()">
+            <i class="fab fa-twitter social-icon"></i>
+            Go to Twitter
+        </button>
+        <button class="curved-button youtube-button" onclick="openYouTube()">
+            <i class="fab fa-youtube social-icon"></i>
+            Go to YouTube
+        </button>
     </div>
 
     <script>
         function openTwitter() {
-            window.open("https://twitter.com/Madhuch268");
+            window.open("https://twitter.com/Madhuchhge268");
+        }
+
+        function openYouTube() {
+            window.open("https://youtube.com/@madhavch2620?si=DCv7uGzvTO2sX4Sw");
         }
     </script>
 </body>
